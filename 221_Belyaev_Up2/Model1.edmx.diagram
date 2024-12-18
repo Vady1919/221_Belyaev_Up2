@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="20bd5debce7f4e4da0bb6cf46474c9cd" Name="Diagram1">
+        <EntityTypeShape EntityType="Belyaev_UP2Model.MaterialType" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Belyaev_UP2Model.PartnerProducts" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Belyaev_UP2Model.Partners" Width="1.5" PointX="3" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Belyaev_UP2Model.PartnersType" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Belyaev_UP2Model.Products" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Belyaev_UP2Model.ProductsType" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <AssociationConnector Association="Belyaev_UP2Model.FK__PartnerPr__Partn__6754599E" ManuallyRouted="false" />
+        <AssociationConnector Association="Belyaev_UP2Model.FK__PartnerPr__Produ__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="Belyaev_UP2Model.FK__Partners__Partne__693CA210" ManuallyRouted="false" />
+        <AssociationConnector Association="Belyaev_UP2Model.FK__Products__Produc__440B1D61" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

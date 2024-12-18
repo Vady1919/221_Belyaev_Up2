@@ -1,0 +1,46 @@
+﻿<Page x:Class="_221_Belyaev_Up2.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:_221_Belyaev_Up2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainPage">
+
+    <Grid>
+        <ListView Name="partnersListView"  HorizontalAlignment="Center"  >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Black" Margin="5" BorderThickness="1" >
+                        <Grid Margin="10" HorizontalAlignment="Stretch" Width="450"  >
+
+                            <WrapPanel Orientation="Vertical" HorizontalAlignment="Left">
+
+                                <WrapPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding PartnersType.Name}"/>
+                                    <TextBlock Text=" | "/>
+                                    <TextBlock Text="{Binding CompanyName}"/>
+                                </WrapPanel>
+                                <TextBlock Text="{Binding DirectorName}"/>
+                                <WrapPanel>
+                                    <TextBlock Text="+7 "/>
+                                    <TextBlock Text="{Binding Phone}"/>
+                                </WrapPanel>
+
+                                <WrapPanel Orientation="Horizontal" >
+                                    <TextBlock Text="Рейтинг: "/>
+                                    <TextBlock Text="{Binding Rating}"/>
+                                    <TextBlock Text="%"/>
+                                </WrapPanel>
+
+                            </WrapPanel>
+                            <TextBlock Text="10%" HorizontalAlignment="Right"/>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="735,392,0,0" VerticalAlignment="Top" Height="32" Width="55"/>
+    </Grid>
+</Page>
